@@ -44,6 +44,11 @@ form.addEventListener('submit', event => {
     })
     .catch(() => {
       console.log(error);
+
+      iziToast.error({
+        title: 'Error',
+        message: 'Sorry, no images were found',
+      });
     })
     .finally(() => {
       hideLoader();
