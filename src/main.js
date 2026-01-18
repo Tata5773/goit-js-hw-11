@@ -48,6 +48,7 @@ form.addEventListener('submit', event => {
       iziToast.error({
         title: 'Error',
         message: 'Sorry, no images were found',
+        position: 'topRight',
       });
     })
     .finally(() => {
