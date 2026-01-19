@@ -43,8 +43,6 @@ form.addEventListener('submit', event => {
       createGallery(data.hits);
     })
     .catch(() => {
-      console.log(error);
-
       iziToast.error({
         title: 'Error',
         message: 'Sorry, no images were found',
